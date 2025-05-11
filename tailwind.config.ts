@@ -53,20 +53,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				},
-				moviebox: {
-					primary: '#BE123C',
-					dark: '#121829',
-					gray: '#9CA3AF',
+				crunchyroll: {
+					orange: '#F47521',
+					darkBlue: '#1A1F2C',
+					neutral: '#8E9196',
+					dark: '#221F26',
+					white: '#FFFFFF',
+					black: '#000000',
+					lightGray: '#F2F2F2',
+					darkGray: '#333333',
 				}
 			},
 			fontFamily: {

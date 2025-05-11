@@ -7,33 +7,33 @@
 
 @layer base {
   :root {
-    --background: 228 22% 12%;
-    --foreground: 0 0% 98%;
+    --background: 222 22% 14%;
+    --foreground: 0 0% 100%;
 
-    --card: 228 22% 12%;
-    --card-foreground: 0 0% 98%;
+    --card: 222 22% 14%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 228 22% 12%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 222 22% 14%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 342 78% 41%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 24 90% 54%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 228 22% 22%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 222 18% 25%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 227 15% 25%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted: 222 16% 24%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 342 78% 41%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 24 90% 54%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 30.4%;
-    --input: 214.3 31.8% 30.4%;
-    --ring: 330 81% 60%;
+    --border: 222 16% 28%;
+    --input: 222 16% 28%;
+    --ring: 24 90% 54%;
 
     --radius: 0.5rem;
   }
@@ -47,16 +47,44 @@
   body {
     @apply bg-background text-foreground font-dmsans;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
 }
 
-.movie-card {
-  @apply relative overflow-hidden rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-xl;
+.cr-container {
+  @apply container max-w-[1400px] px-4 md:px-6 mx-auto;
 }
 
-.movie-card-badge {
-  @apply absolute top-2 right-2 bg-yellow-400 text-black px-2 py-1 rounded text-sm font-semibold;
+.anime-card {
+  @apply relative overflow-hidden rounded-md bg-secondary transition-all duration-300 hover:-translate-y-1;
+}
+
+.anime-card-image {
+  @apply aspect-[3/4] w-full object-cover;
+}
+
+.anime-card-overlay {
+  @apply absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300;
+}
+
+.anime-card-badge {
+  @apply absolute top-2 right-2 bg-crunchyroll-orange text-white px-2 py-1 rounded text-xs font-bold;
 }
 
 .header-search {
   @apply relative flex items-center;
+}
+
+.cr-glass {
+  @apply bg-secondary/80 backdrop-blur-sm border border-muted/50;
+}
+
+.cr-button {
+  @apply bg-crunchyroll-orange text-white font-medium py-2 px-4 rounded hover:bg-orange-600 transition-colors;
+}
+
+.cr-link {
+  @apply text-foreground hover:text-crunchyroll-orange transition-colors;
 }
