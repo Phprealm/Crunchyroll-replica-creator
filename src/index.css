@@ -88,3 +88,16 @@
 .cr-link {
   @apply text-foreground hover:text-crunchyroll-orange transition-colors;
 }
+
+.list-view-mode,
+.grid-view-mode {
+  @apply transition-all duration-300;
+}
+
+.list-view-mode {
+  @apply animate-fade-in;
+}
+
+.grid-view-mode {
+  @apply grid animate-fade-in;
+}

@@ -2,6 +2,8 @@
 import CrunchyNavbar from "@/components/CrunchyNavbar";
 import CrunchyHero from "@/components/CrunchyHero";
 import FeaturedAnime from "@/components/FeaturedAnime";
+import ListAnime from "@/components/ListAnime";
+import RelatedAnimeGrid from "@/components/RelatedAnimeGrid";
 import CrunchyFooter from "@/components/CrunchyFooter";
 
 const Index = () => {
@@ -11,7 +13,8 @@ const Index = () => {
       <main className="flex-grow">
         <CrunchyHero />
         <FeaturedAnime />
-        {/* We can add more sections here later */}
+        <ListAnime />
+        <RelatedAnimeGrid />
       </main>
       <CrunchyFooter />
     </div>
