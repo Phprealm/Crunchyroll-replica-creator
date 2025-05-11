@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/abe3347e-0d02-4691-8ea1-46e6f11a2dbd
+**URL**: [https://preview-05f48df5--moviebox-replica-creator.lovable.app]
 
 ## How can I edit this code?
 
