@@ -1,5 +1,6 @@
 
 import CrunchyNavbar from "@/components/CrunchyNavbar";
+import CrunchySidebar from "@/components/CrunchySidebar";
 import CrunchyHero from "@/components/CrunchyHero";
 import FeaturedAnime from "@/components/FeaturedAnime";
 import ListAnime from "@/components/ListAnime";
@@ -10,7 +11,8 @@ const Index = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <CrunchyNavbar />
-      <main className="flex-grow">
+      <CrunchySidebar />
+      <main className="flex-grow pl-16 md:pl-60 transition-all duration-300">
         <CrunchyHero />
         <FeaturedAnime />
         <ListAnime />
